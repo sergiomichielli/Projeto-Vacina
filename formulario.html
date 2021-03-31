@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="images/fatec.ico">
+  <title>Formulário</title>
+</head>
+
+<body style="background-color: #c8d3a2d0;">
+   <main>
+    <h2 class="subtitulo">Complete seu cadastro:</h2>
+    <form>
+      <!-- Input nome -->
+      <div class="form-group">
+        <label for="nome"><strong>Nome*:</strong></label>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" placeholder="Nome" aria-label="Username"
+            aria-describedby="basic-addon1" maxlength="51" required>
+        </div>
+
+        <!-- Input Sobrenome -->
+
+        <label for="sobrenome"><strong>Sobrenome*:</strong></label>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Surename"
+            aria-describedby="basic-addon1" maxlength="51" required>
+        </div>
+
+        <!-- Input Sobrenome -->
+        <label for="data-nascimento "><strong>Data de Nascimento*:</strong></label>
+        <div class="input-group mb-2">
+          <input style="color: #6c757d;" type="date" class="form-control" aria-label="Birthday"
+            aria-describedby="basic-addon1" required>
+        </div>
+
+        <!-- Input Documentos -->
+        <div class="form-row mb-2">
+          <div class="col-6">
+            <label for="documentos "><strong>CPF*:</strong></label>
+            <input type="text" class="form-control" placeholder="999.999.999-99"
+            pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" maxlength="14" required>
+          </div>
+          <div class="col-6">
+            <label for="documentos "><strong>RG*:</strong></label>
+            <input type="text" class="form-control" placeholder="99.999.999-9"
+            pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9]{1}" maxlength="12" required>
+          </div>
+        </div>
+
+        <!-- Input telefone -->
+        <div>
+          <label for="phone"><strong>Telefone*:</strong></label>
+          <input class="form-control input-group mb-2" type="tel" id="phone" name="phone"
+            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(19) 99999-9999" maxlength="11">
+        </div>
+
+        <!-- checkbox sexo -->
+        <label style="margin-bottom: 0px;" for="Sexo"><strong>Sexo*:</strong></label><br>
+        <div class="form-check form-check-inline mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Feminino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <label class="form-check-label" for="inlineRadio3">Não definido</label>
+        </div>
+        <br>
+
+        <!-- input cidade, estado, cep -->
+        <label for="Endereço"><strong>Endereço:</strong></label>
+        <div class="form-row mb-2">
+          <div class="col-9 mb-2">
+            <input type="text" class="form-control" placeholder="Rua" required>
+          </div>
+          <div class="col-3 mb-2">
+            <input type="number" class="form-control" placeholder="Número" min="1" required>
+          </div>
+          <div class="col-4 mb-2">
+            <input type="text" class="form-control" placeholder="Bairro" required>
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder="Cidade" required>
+          </div>
+          <div class="col-2">
+            <select style="color: #6c757d;" class="custom-select mb-2" required>
+              <option selected disabled>Estado</option>
+              <option value="1">AC</option>
+              <option value="2">AL</option>
+              <option value="3">AP</option>
+              <option value="4">AM</option>
+              <option value="5">BA</option>
+              <option value="6">CE</option>
+              <option value="7">DF</option>
+              <option value="8">ES</option>
+              <option value="9">GO</option>
+              <option value="10">MA</option>
+              <option value="11">MT</option>
+              <option value="12">MS</option>
+              <option value="13">MG</option>
+              <option value="14">PA</option>
+              <option value="15">PB</option>
+              <option value="16">PR</option>
+              <option value="17">PE</option>
+              <option value="18">PI</option>
+              <option value="19">RJ</option>
+              <option value="20">RN</option>
+              <option value="21">RS</option>
+              <option value="22">RO</option>
+              <option value="23">RR</option>
+              <option value="24">SC</option>
+              <option value="25">SP</option>
+              <option value="26">SE</option>
+              <option value="27">TO</option>
+            </select>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Cep" pattern="[0-9]{5}-[0-9]{3}" maxlength="8"
+              required>
+          </div>
+          <div class="col-12 mb-2">
+            <input type="text" class="form-control" placeholder="Complemento">
+          </div>
+        </div>
+
+
+        <!-- checkbox para disciplinas -->
+        <div style="margin-bottom: 10px;">
+          <label for="tipoSanguineo"><strong>Selecione seu tipo sanguíneo:</strong></label>
+          <br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              Não sei
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              A+ ou A-
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              B+ ou B-
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label" for="exampleRadios4">
+              AB+ ou AB-
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+            <label class="form-check-label" for="exampleRadios5">
+              O+ ou O-
+            </label>
+          </div>
+        </div>
+
+
+        <!-- Input de e-mail -->
+        <div class="form-group mb-2">
+          <label for="E-mail"><strong>E-mail*:</label></strong>
+          <input type="email" class="form-control mb-2" placeholder="E-mail" aria-label="Username"
+            aria-describedby="basic-addon1" required>
+        </div>
+
+
+
+        <!-- Input senha -->
+        <div class="form-group mb-2">
+          <label for="Senha"><strong>Senha*:</strong></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
+        </div>
+
+        <!-- Input senha -->
+        <div class="form-group mb-3">
+          <label for="Senha-confirma"><strong>Confirme sua senha*:</strong></label>
+          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="********" required>
+        </div>
+
+
+        <!-- Botão confirma -->
+        <div>
+          <button id="btn-confirma" class="btn btn-secondary">Confirma</button>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>

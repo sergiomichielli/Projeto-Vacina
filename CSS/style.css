@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(..//images/covide2.jpeg);
+  background-size: cover;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+h2{
+  text-align: center;
+}
+
+main {
+  border-radius: 10px;
+  background-color: #c8d3a2d0;
+  width: 800px;
+  padding: 20px 50px;
+  margin-left: auto;
+  /* para alinhar o conteúdo, deve ser usado junto com o width */
+  margin-right: auto;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+footer{
+  height: 50px;
+}
+
+.subtitulo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(95, 16, 16);
+  /* margin-bottom: 0.6em; */
+}
+
+@media (max-width: 812px){
+  main{
+    width: 480px;
+  }
+}
+
+#control-container {
+  background-color:  #c8d3a2d0;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* #exit-container p {
+  margin-bottom: 10px;
+} */
+
+/* p{
+  text-align: left;
+  font: 1rem 'Fira Sans', sans-serif;
+  font-weight: border;
+} */
+
+/* input {
+  margin: .4rem;
+} */
